@@ -106,6 +106,7 @@
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   flex-wrap: nowrap;
   padding: 0;
   display: none;
@@ -119,7 +120,10 @@
 .product-header__nav-item {
   padding: 0 15px 0 0;
 }
-
+.product-header__nav-item_icon {
+  width: 40px;
+  height: 40px;
+}
 .product-header__nav-item:last-of-type {
   padding: 0;
 }
@@ -132,11 +136,16 @@
   white-space: nowrap;
 }
 .product-header_icon {
-  width: 50px;
-  height: 50px;
-  color: black;
+  stroke: white;
+  fill: #fff;
+  /* width: 40px;
+  height: 40px; */
+  /* color: black; */
 }
-
+.product-header_icon:hover {
+  stroke: purple;
+  fill: purple;
+}
 .slider-wrapper {
   width: 100%;
 }
