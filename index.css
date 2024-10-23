@@ -121,6 +121,7 @@
   padding: 0 15px 0 0;
 }
 .product-header__nav-item_icon {
+  fill: white;
   width: 40px;
   height: 40px;
 }
