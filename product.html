@@ -5,17 +5,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Браслет регализ ручной работы</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
+    <!-- Сначала шрифты, потом глобальные стили, потом кастомные стили -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
+    <!-- Если стили свайпера идут после моих кастомных стилей, то исчезнет отступ между большой фото и иконками снизу. -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -90,46 +92,73 @@
         <div class="single-product">
           <div class="slider-wrapper">
             <!-- Основной слайдер -->
+
+            <!-- <img
+  src="cat@1x.jpg"
+  srcset="cat@2x.jpg 2x, cat@3x.jpg 3x"
+  alt="Рыжий кот-учёный сидит за компьютером"
+> -->
+            <!-- img
+      src="./images/flowers.jpeg"
+      srcset="
+        ./images/flowers.jpeg    1x,
+        ./images/flowers-2x.jpeg 2x,
+        ./images/flowers-3x.jpeg 3x
+      "
+      alt="Букет ярких роз крупным планом"
+    /> -->
+
             <div class="swiper mySwiper2">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img
-                    src="./images/regalis-denim.jpg"
+                    src="./images/fuksiya/fuksiya-1_h500.jpg"
+                    srcset="
+                      ./images/fuksiya/fuksiya-1_h500.jpg  1x,
+                      ./images/fuksiya/fuksiya-1_h1000.jpg 2x
+                    "
+                    class="swiper-image"
+                    alt="браслет регализ цвета фуксия"
+                  />
+                </div>
+
+                <div class="swiper-slide">
+                  <img
+                    src="./images/fuksiya/fuksiya-2_h400.jpg"
+                    srcset="
+                      ./images/fuksiya/fuksiya-2_h400.jpg 1x,
+                      ./images/fuksiya/fuksiya-2_h800.jpg 2x
+                    "
+                    class="swiper-slide"
+                    alt="браслет регализ розовый"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/fuksiya/fuksiya-2_h400.jpg"
+                    srcset="
+                      ./images/fuksiya/fuksiya-2_h400.jpg 1x,
+                      ./images/fuksiya/fuksiya-2_h800.jpg 2x
+                    "
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    src="./images/fuksiya/Braslet_regaliz_fuksiya_2.jpg"
                     class="swiper-image"
                     alt=""
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="./images/regalis-obereg.jpg"
+                    src="./images/fuksiya/fuksiya-3_1x.jpg"
                     class="swiper-image"
                     alt=""
                   />
                 </div>
                 <div class="swiper-slide">
                   <img
-                    src="./images/regalis_capuchino.jpg"
-                    class="swiper-image"
-                    alt=""
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="./images/regalis-pero.JPG"
-                    class="swiper-image"
-                    alt=""
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="./images/regalis-fucsia.JPG"
-                    class="swiper-image"
-                    alt=""
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="./images/bracelet-spring.JPG"
+                    src="./images/fuksiya/Braslet_regaliz_fuksiya_4.jpg"
                     class="swiper-image"
                     alt=""
                   />
@@ -214,7 +243,9 @@
               </tr>
               <tr>
                 <td class="single-product__details-cell">Материал</td>
-                <td class="single-product__details-cell">кожа натуральная, керамика</td>
+                <td class="single-product__details-cell">
+                  кожа натуральная, керамика
+                </td>
               </tr>
               <tr>
                 <td class="single-product__details-cell">Фурнитура</td>
@@ -226,7 +257,7 @@
               </tr>
               <tr>
                 <td class="single-product__details-cell">Стиль</td>
-                <td class="single-product__details-cell">романтика</td>
+                <td>романтика</td>
               </tr>
             </table>
 

@@ -2,20 +2,18 @@
   background-color: #fff;
   margin: 0 auto;
   padding: 0;
+  box-sizing: border-box;
   color: #000;
   font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  box-sizing: border-box;
 }
-
+/* рэппер для всех структурных блоков страницы (хедер, мейн и футер), в нем
+  оверфлоу хидден, чтобы не было горизонтального скролла при выпадании элементов
+  за пределы экрана при работе с адаптивностью   или позиционированием. */
 .page__container {
   max-width: 1280px;
   margin: 0 auto;
-
-  /* рэппер для всех структурных блоков страницы (хедер, мейн и футер), в нем
-  оверфлоу хидден, чтобы не было горизонтального скролла при выпадании элементов
-  за пределы экрана при работе с адаптивностью   или позиционированием. */
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -496,10 +494,13 @@
 
 /* Свайпер большой фотки товара */
 .mySwiper2 {
-  height: 300px;
+  /* height: 300px; */
   width: 100%;
-  box-sizing: border-box;
-  object-fit: cover;
+  aspect-ratio: 4/3;
+  /* панель разработчиков пишет, что здесь не нужно object-fit, тк здесь оно не применяется,
+  а box-sizing было установлено выше для страницы */
+  /* object-fit: cover; */
+  /* box-sizing: border-box; */
 }
 
 /* Свайпер маленьких иконок товара */
@@ -507,7 +508,7 @@
   height: 100px;
   box-sizing: border-box;
   padding: 5px 0;
-  /* object-fit: cover; */
+  object-fit: cover;
 }
 
 .thumbs-swiper-image {
@@ -538,15 +539,17 @@
 .swiper-image {
   display: block;
   width: 100%;
-  height: 500px;
+  height: 100%;
+  /* aspect-ratio: 1/1; */
+  /* height: 300px; */
   object-fit: cover;
 }
-/* .swiper-slide img {
+.swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
-}  */
+}
 
 .swiper-button-prev::after {
   color: #fff;
@@ -700,7 +703,7 @@
 .single-product__details-cell {
   margin: 0px;
   padding: 15px 0;
-  border-bottom: 2px solid #fbceb5;
+  border-bottom: 1px solid #fbceb5;
 }
 .single-product__details-cell:nth-child(odd) {
   padding-right: 20px;
