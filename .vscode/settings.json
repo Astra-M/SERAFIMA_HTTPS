@@ -1,3 +1,6 @@
 {
-  "editor.guides.bracketPairs": false
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+  "editor.guides.bracketPairs": false,
+  "editor.formatOnSave": true
 }

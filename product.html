@@ -1,38 +1,45 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <!-- ррррррррр -->
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
     <title>Браслет регализ ручной работы</title>
     <!-- Сначала шрифты, потом глобальные стили, потом кастомные стили -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
     <!-- Если стили свайпера идут после моих кастомных стилей, то исчезнет отступ между большой фото и иконками снизу. -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="./index.css" />
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="./index.css" />
   </head>
+
   <body class="page">
     <div class="page__container">
       <header class="product-header">
-        <a href="#" class="product-header__logo-link">
+        <a
+          href="#"
+          class="product-header__logo-link">
           <img
             src="./images/Serafima_logo.png"
             class="product-header__logo"
-            alt="лого Серафима студио"
-          />
+            alt="лого Серафима студио" />
         </a>
         <!-- viewBox="0 0 100 100" -->
         <nav class="product-header__nav">
@@ -45,36 +52,42 @@
               <a
                 href="./index.html"
                 class="product-header__nav-link"
-                target="_blank"
-              >
+                target="_blank">
                 <!-- Все классы для svg и viewBox прописываются внутри html при использовании use -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 40 40"
-                  class="product-header__nav-item_icon"
-                >
+                  class="product-header__nav-item_icon">
                   <!-- в доке и на форуме путь должен быть без слеша, и все работает, но я оставила обычный путь от корня -->
                   <use href="./svg/icons.svg#home"></use>
                 </svg>
               </a>
             </li>
             <li class="product-header__nav-item">
-              <a href="#" class="product-header__nav-link" target="_blank"
+              <a
+                href="#"
+                class="product-header__nav-link"
+                target="_blank"
                 >Обо мне</a
               >
             </li>
             <li class="product-header__nav-item">
-              <a href="#" class="product-header__nav-link" target="_blank"
+              <a
+                href="#"
+                class="product-header__nav-link"
+                target="_blank"
                 >В каталог</a
               >
             </li>
             <li class="product-header__nav-item product-header__nav-item_icon">
-              <a href="#" class="product-header__nav-link" target="_blank">
+              <a
+                href="#"
+                class="product-header__nav-link"
+                target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 40 40"
-                  class="product-header__nav-item_icon"
-                >
+                  class="product-header__nav-item_icon">
                   <use href="./svg/icons.svg#cart"></use>
                 </svg>
               </a>
@@ -92,76 +105,122 @@
         <div class="single-product">
           <div class="slider-wrapper">
             <!-- Основной слайдер -->
-
-            <!-- <img
-  src="cat@1x.jpg"
-  srcset="cat@2x.jpg 2x, cat@3x.jpg 3x"
-  alt="Рыжий кот-учёный сидит за компьютером"
-> -->
-            <!-- img
-      src="./images/flowers.jpeg"
-      srcset="
-        ./images/flowers.jpeg    1x,
-        ./images/flowers-2x.jpeg 2x,
-        ./images/flowers-3x.jpeg 3x
-      "
-      alt="Букет ярких роз крупным планом"
-    /> -->
-
             <div class="swiper mySwiper2">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img
-                    src="./images/fuksiya/fuksiya-1_h500.jpg"
-                    srcset="
-                      ./images/fuksiya/fuksiya-1_h500.jpg  1x,
-                      ./images/fuksiya/fuksiya-1_h1000.jpg 2x
-                    "
-                    class="swiper-image"
-                    alt="браслет регализ цвета фуксия"
-                  />
-                </div>
-
-                <div class="swiper-slide">
-                  <img
-                    src="./images/fuksiya/fuksiya-2_h400.jpg"
-                    srcset="
-                      ./images/fuksiya/fuksiya-2_h400.jpg 1x,
-                      ./images/fuksiya/fuksiya-2_h800.jpg 2x
-                    "
-                    class="swiper-slide"
-                    alt="браслет регализ розовый"
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="./images/fuksiya/fuksiya-2_h400.jpg"
-                    srcset="
-                      ./images/fuksiya/fuksiya-2_h400.jpg 1x,
-                      ./images/fuksiya/fuksiya-2_h800.jpg 2x
-                    "
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya1-s@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya1-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya1-m@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya1-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/fuksiya/fuksiya1-l@1x.jpg"
+                      srcset="
+                        ./images/fuksiya/fuksiya1-l@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya1-l@2x.jpg 2x
+                      "
+                      class="swiper-image" />
+                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="./images/fuksiya/Braslet_regaliz_fuksiya_2.jpg"
-                    class="swiper-image"
-                    alt=""
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya2-s@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya2-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya2-m@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya2-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/fuksiya/fuksiya2-l@1x.jpg"
+                      srcset="
+                        ./images/fuksiya/fuksiya2-l@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya2-l@2x.jpg 2x
+                      "
+                      class="swiper-image" />
+                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="./images/fuksiya/fuksiya-3_1x.jpg"
-                    class="swiper-image"
-                    alt=""
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya3-s@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya3-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya3-m@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya3-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/fuksiya/fuksiya3-l@1x.jpg"
+                      srcset="
+                        ./images/fuksiya/fuksiya3-l@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya3-l@2x.jpg 2x
+                      "
+                      class="swiper-image" />
+                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="./images/fuksiya/Braslet_regaliz_fuksiya_4.jpg"
-                    class="swiper-image"
-                    alt=""
-                  />
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya4-s@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya4-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya4-m@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya4-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/fuksiya/fuksiya4-l@1x.jpg"
+                      srcset="
+                        ./images/fuksiya/fuksiya4-l@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya4-l@2x.jpg 2x
+                      "
+                      class="swiper-image" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya5-s@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya5-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya5-m@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya5-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/fuksiya/fuksiya5-l@1x.jpg"
+                      srcset="
+                        ./images/fuksiya/fuksiya5-l@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya5-l@2x.jpg 2x
+                      "
+                      class="swiper-image" />
+                  </picture>
                 </div>
               </div>
               <!-- If we need pagination -->
@@ -172,51 +231,125 @@
               <div class="swiper-button-next"></div>
             </div>
             <!--Слайдер с иконками  -->
-            <div thumbsSlider="" class="swiper mySwiper">
+            <div
+              thumbsSlider=""
+              class="swiper mySwiper">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
                 <div class="swiper-slide">
-                  <img
+                  <picture class="thumbs-swiper-image">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya1-s@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya1-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya1-m@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya1-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/fuksiya/fuksiya1-l@1x.jpg"
+                      srcset="
+                        ./images/fuksiya/fuksiya1-l@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya1-l@2x.jpg 2x
+                      " />
+                  </picture>
+                  <!-- <img
                     src="./images/regalis-denim.jpg"
                     class="thumbs-swiper-image"
-                    alt=""
-                  />
+                    alt="" /> -->
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="./images/regalis-obereg.jpg"
-                    class="thumbs-swiper-image"
-                    alt=""
-                  />
+                  <picture class="thumbs-swiper-image">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya2-s@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya2-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya2-m@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya2-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/fuksiya/fuksiya2-l@1x.jpg"
+                      srcset="
+                        ./images/fuksiya/fuksiya2-l@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya2-l@2x.jpg 2x
+                      " />
+                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="./images/regalis_capuchino.jpg"
-                    class="thumbs-swiper-image"
-                    alt=""
-                  />
+                  <picture class="thumbs-swiper-image">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya3-s@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya3-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya3-m@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya3-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/fuksiya/fuksiya3-l@1x.jpg"
+                      srcset="
+                        ./images/fuksiya/fuksiya3-l@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya3-l@2x.jpg 2x
+                      " />
+                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="./images/regalis-pero.JPG"
-                    class="thumbs-swiper-image"
-                    alt=""
-                  />
+                  <picture class="thumbs-swiper-image">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya4-s@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya4-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya4-m@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya4-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/fuksiya/fuksiya4-l@1x.jpg"
+                      srcset="
+                        ./images/fuksiya/fuksiya4-l@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya4-l@2x.jpg 2x
+                      " />
+                  </picture>
                 </div>
                 <div class="swiper-slide">
-                  <img
-                    src="./images/regalis-fucsia.JPG"
-                    class="thumbs-swiper-image"
-                    alt=""
-                  />
-                </div>
-                <div class="swiper-slide">
-                  <img
-                    src="./images/bracelet-spring.JPG"
-                    class="thumbs-swiper-image"
-                    alt=""
-                  />
+                  <picture class="thumbs-swiper-image">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya5-s@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya5-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/fuksiya/fuksiya5-m@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya5-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/fuksiya/fuksiya5-l@1x.jpg"
+                      srcset="
+                        ./images/fuksiya/fuksiya5-l@1x.jpg 1x,
+                        ./images/fuksiya/fuksiya5-l@2x.jpg 2x
+                      " />
+                  </picture>
                 </div>
               </div>
             </div>
@@ -257,7 +390,7 @@
               </tr>
               <tr>
                 <td class="single-product__details-cell">Стиль</td>
-                <td>романтика</td>
+                <td class="single-product__details-cell">романтика</td>
               </tr>
             </table>
 
@@ -266,7 +399,9 @@
               которые не боятся проявить себя. Добавь красок в рутину
               повседневности!
             </p>
-            <button type="submit" class="shop-button shop-button_size_small">
+            <button
+              type="submit"
+              class="shop-button shop-button_size_small">
               в корзину
             </button>
           </div>
