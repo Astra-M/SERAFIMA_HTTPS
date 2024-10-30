@@ -212,7 +212,7 @@
   height: 30px;
   font-size: 15px;
   font-weight: 400;
-  margin: 0 auto 30px;
+  margin: 30px auto 30px;
 }
 
 .shop-button_transparent {
@@ -661,10 +661,14 @@
   flex-direction: column;
 }
 
-.single-product__description {
-  margin: 15px 0 30px 0;
+.single-product__intro {
+  line-height: 1.5em;
 }
 
+.single-product__description {
+  margin: 0 0 15px 0;
+  line-height: 1.5em;
+}
 .single-product__labels {
   display: flex;
   margin: 20px 0 10px 0;
