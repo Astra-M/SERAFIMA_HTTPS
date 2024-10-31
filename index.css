@@ -113,8 +113,8 @@
   display: block;
   fill: white;
   stroke: white;
-  width: 40px;
-  height: 40px;
+  width: 25px;
+  height: 25px;
 }
 .product-header__nav-item:last-of-type {
   padding: 0;

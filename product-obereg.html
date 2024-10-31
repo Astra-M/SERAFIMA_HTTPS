@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <title>Браслет регализ ручной работы красный</title>
+    <!-- Сначала шрифты, потом глобальные стили, потом кастомные стили -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+    <!-- Если стили свайпера идут после моих кастомных стилей, то исчезнет отступ между большой фото и иконками снизу. -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link
+      rel="stylesheet"
+      href="./index.css" />
+  </head>
+
+  <body class="page">
+    <div class="page__container">
+      <header class="product-header">
+        <a
+          href="#"
+          class="product-header__logo-link">
+          <img
+            src="./images/Serafima_logo.png"
+            class="product-header__logo"
+            alt="лого Серафима студио" />
+        </a>
+        <!-- viewBox="0 0 100 100" -->
+        <nav class="product-header__nav">
+          <!-- 
+          <svg xmlns="http://www.w3.org/2000/svg">
+            <use href="#cart"></use>
+          </svg> -->
+          <ul class="product-header__nav-list">
+            <li class="product-header__nav-item product-header__nav-item_icon">
+              <a
+                href="./index.html"
+                class="product-header__nav-link"
+                target="_blank">
+                <!-- Все классы для svg и viewBox прописываются внутри html при использовании use -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40 40"
+                  class="product-header__nav-item_icon">
+                  <!-- в доке и на форуме путь должен быть без слеша, и все работает, но я оставила обычный путь от корня -->
+                  <use href="./svg/icons.svg#home"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="product-header__nav-item">
+              <a
+                href="#"
+                class="product-header__nav-link"
+                target="_blank"
+                >Обо мне</a
+              >
+            </li>
+            <li class="product-header__nav-item">
+              <a
+                href="#"
+                class="product-header__nav-link"
+                target="_blank"
+                >В каталог</a
+              >
+            </li>
+            <li class="product-header__nav-item product-header__nav-item_icon">
+              <a
+                href="#"
+                class="product-header__nav-link"
+                target="_blank">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 40 40"
+                  class="product-header__nav-item_icon">
+                  <use href="./svg/icons.svg#cart"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+
+          <div class="product-header__burger">
+            <span class="product-header__burger-line one"></span>
+            <span class="product-header__burger-line two"></span>
+            <span class="product-header__burger-line three"></span>
+          </div>
+        </nav>
+      </header>
+      <main class="content">
+        <div class="single-product">
+          <div class="slider-wrapper">
+            <!-- Основной слайдер -->
+            <div class="swiper mySwiper2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/obereg/obereg1-s@1x.jpg 1x,
+                        ./images/obereg/obereg1-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/obereg/obereg1-m@1x.jpg 1x,
+                        ./images/obereg/obereg1-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/obereg/obereg1-l@1x.jpg"
+                      srcset="
+                        ./images/obereg/obereg1-l@1x.jpg 1x,
+                        ./images/obereg/obereg1-l@2x.jpg 2x
+                      "
+                      class="swiper-image" />
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/obereg/obereg3-s@1x.jpg 1x,
+                        ./images/obereg/obereg3-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/obereg/obereg3-m@1x.jpg 1x,
+                        ./images/obereg/obereg3-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/obereg/obereg3-l@1x.jpg"
+                      srcset="
+                        ./images/obereg/obereg3-l@1x.jpg 1x,
+                        ./images/obereg/obereg3-l@2x.jpg 2x
+                      "
+                      class="swiper-image" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/obereg/obereg4-s@1x.jpg 1x,
+                        ./images/obereg/obereg4-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/obereg/obereg4-m@1x.jpg 1x,
+                        ./images/obereg/obereg4-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/obereg/obereg4-l@1x.jpg"
+                      srcset="
+                        ./images/obereg/obereg4-l@1x.jpg 1x,
+                        ./images/obereg/obereg4-l@2x.jpg 2x
+                      "
+                      class="swiper-image" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/obereg/obereg5-s@1x.jpg 1x,
+                        ./images/obereg/obereg5-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/obereg/obereg5-m@1x.jpg 1x,
+                        ./images/obereg/obereg5-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/obereg/obereg5-l@1x.jpg"
+                      srcset="
+                        ./images/obereg/obereg5-l@1x.jpg 1x,
+                        ./images/obereg/obereg5-l@2x.jpg 2x
+                      "
+                      class="swiper-image" />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/obereg/obereg2-s@1x.jpg 1x,
+                        ./images/obereg/obereg2-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/obereg/obereg2-m@1x.jpg 1x,
+                        ./images/obereg/obereg2-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/obereg/obereg2-l@1x.jpg"
+                      srcset="
+                        ./images/obereg/obereg2-l@1x.jpg 1x,
+                        ./images/obereg/obereg2-l@2x.jpg 2x
+                      "
+                      class="swiper-image" />
+                  </picture>
+                </div>
+              </div>
+              <!-- If we need pagination -->
+              <div class="swiper-pagination"></div>
+
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+            <!--Слайдер с иконками  -->
+            <div
+              thumbsSlider=""
+              class="swiper mySwiper">
+              <!-- Additional required wrapper -->
+              <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                  <picture class="thumbs-swiper-image">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/obereg/obereg1-s@1x.jpg 1x,
+                        ./images/obereg/obereg1-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/obereg/obereg1-m@1x.jpg 1x,
+                        ./images/obereg/obereg1-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/obereg/obereg1-l@1x.jpg"
+                      srcset="
+                        ./images/obereg/obereg1-l@1x.jpg 1x,
+                        ./images/obereg/obereg1-l@2x.jpg 2x
+                      " />
+                  </picture>
+                  <!-- <img
+                    src="./images/regalis-denim.jpg"
+                    class="thumbs-swiper-image"
+                    alt="" /> -->
+                </div>
+                <div class="swiper-slide">
+                  <picture class="thumbs-swiper-image">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/obereg/obereg3-s@1x.jpg 1x,
+                        ./images/obereg/obereg3-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/obereg/obereg3-m@1x.jpg 1x,
+                        ./images/obereg/obereg3-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/obereg/obereg3-l@1x.jpg"
+                      srcset="
+                        ./images/obereg/obereg3-l@1x.jpg 1x,
+                        ./images/obereg/obereg3-l@2x.jpg 2x
+                      " />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="thumbs-swiper-image">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/obereg/obereg4-s@1x.jpg 1x,
+                        ./images/obereg/obereg4-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/obereg/obereg4-m@1x.jpg 1x,
+                        ./images/obereg/obereg4-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/obereg/obereg4-l@1x.jpg"
+                      srcset="
+                        ./images/obereg/obereg4-l@1x.jpg 1x,
+                        ./images/obereg/obereg4-l@2x.jpg 2x
+                      " />
+                  </picture>
+                </div>
+
+                <div class="swiper-slide">
+                  <picture class="thumbs-swiper-image">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/obereg/obereg5-s@1x.jpg 1x,
+                        ./images/obereg/obereg5-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/obereg/obereg5-m@1x.jpg 1x,
+                        ./images/obereg/obereg5-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/obereg/obereg5-l@1x.jpg"
+                      srcset="
+                        ./images/obereg/obereg5-l@1x.jpg 1x,
+                        ./images/obereg/obereg5-l@2x.jpg 2x
+                      " />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="thumbs-swiper-image">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ./images/obereg/obereg2-s@1x.jpg 1x,
+                        ./images/obereg/obereg2-s@2x.jpg 2x
+                      " />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ./images/obereg/obereg2-m@1x.jpg 1x,
+                        ./images/obereg/obereg2-m@2x.jpg 2x
+                      " />
+                    <img
+                      src="./images/obereg/obereg2-l@1x.jpg"
+                      srcset="
+                        ./images/obereg/obereg2-l@1x.jpg 1x,
+                        ./images/obereg/obereg2-l@2x.jpg 2x
+                      " />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="single-product__info">
+            <h1 class="single-product__title">
+              Браслет регализ &laquo;Алый оберег&raquo;
+            </h1>
+
+            <span class="single-product__price"> 3 500 руб.</span>
+            <p class="single-product__intro">
+              Дерзкий. Броский. Вызывающий. Для тех, кто любит впечатлять и быть
+              примером для подражания. Для ярких личностей, которые не боятся
+              сильных эффектов!
+            </p>
+            <div class="single-product__labels">
+              <span
+                class="single-product__label single-product__label_description single-product__label_visible"
+                >Описание</span
+              >
+              <span class="single-product__label single-product__label_details"
+                >Характеристики</span
+              >
+            </div>
+            <p class="single-product__description">
+              Браслет выполнен из натуральной кожи производства Испания, с
+              выделкой под кожу питона.
+            </p>
+            <p class="single-product__description">
+              Бусины греческого производства, каждая сделана вручную. <br />
+              В центре – бусина черного цвета, с легким бензиновым отливом,
+              очень красивая!<br />
+              По бокам – пятнистые бусины с разным рисунком с разных сторон, за
+              счет чего браслет можно носить как двусторонний.
+            </p>
+            <p class="single-product__description">
+              Фурнитура выполнена из сплава ZAMAK. <br />
+              Это сплав премиум-класса из 4-х металлов (цинка, алюминия, магния
+              и меди), более прочный и безопасный, чем дешевые традиционные
+              никельсодержащие сплавы.
+            </p>
+            <p class="single-product__description">
+              Цвет фурнитуры – под золото.
+            </p>
+
+            <table class="single-product__details">
+              <tr class="single-product__details-row">
+                <td class="single-product__details-cell">Размер</td>
+                <td class="single-product__details-cell">20 см.</td>
+              </tr>
+              <tr>
+                <td class="single-product__details-cell">Материал</td>
+                <td class="single-product__details-cell">
+                  кожа натуральная, керамика
+                </td>
+              </tr>
+              <tr>
+                <td class="single-product__details-cell">Фурнитура</td>
+                <td class="single-product__details-cell">никель</td>
+              </tr>
+              <tr>
+                <td class="single-product__details-cell">Пол</td>
+                <td class="single-product__details-cell">женский</td>
+              </tr>
+              <tr>
+                <td class="single-product__details-cell">Стиль</td>
+                <td class="single-product__details-cell">экспрессия</td>
+              </tr>
+            </table>
+
+            <button
+              type="submit"
+              class="shop-button shop-button_size_small">
+              в корзину
+            </button>
+          </div>
+        </div>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">&copy Серафима студио, 2024</p>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      const swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+
+    <!-- <script type="module" src="./index.js"></script> -->
+  </body>
+</html>
+
+<!-- <svg xmlns="http://www.w3.org/2000/svg">
+  <symbol id="home">
+    <path
+      d="M92.345 44.125 50.53 8.39a1.5 1.5 0 0 0-1.959.008L7.646 44.005a1.5 1.5 0 1 0 1.969 2.263l8.818-7.672v47.872a1.5 1.5 0 0 0 1.5 1.5h58.605a1.5 1.5 0 0 0 1.5-1.5V37.554l10.357 8.851a1.498 1.498 0 1 0 1.95-2.28zM77.038 84.969H21.433V35.986L49.564 11.51l27.474 23.48v49.979z"
+    />
+    <path
+      d="M33.45 41.326v28.78a1.5 1.5 0 0 0 1.5 1.5h28.778a1.5 1.5 0 0 0 1.5-1.5v-28.78a1.5 1.5 0 0 0-1.5-1.5H34.95a1.5 1.5 0 0 0-1.5 1.5zm17.499 27.28V57.217h11.279v11.389H50.949zm11.28-14.389h-11.28V42.826h11.279v11.391zM36.45 42.826h11.499v12.335a1.489 1.489 0 0 0 0 1.112v12.332H36.45V42.826z"
+    />
+  </symbol>
+</svg> -->
+
+<!-- <svg
+  xmlns="http://www.w3.org/2000/svg"
+  xml:space="preserve"
+  style="enable-background: new 0 0 100.353 100.353"
+  viewBox="0 0 100 100"
+>
+  <symbol id="cart">
+    <path
+      d="M94.224 18.366a1.497 1.497 0 0 0-1.138-.523H22.308l-2.886-9.672A1.502 1.502 0 0 0 17.984 7.1H6.915a1.5 1.5 0 1 0 0 3h9.951L35.1 71.204c.002.007.008.013.01.02l2.265 7.704a7.814 7.814 0 0 0-2.316 5.557c0 4.33 3.521 7.853 7.848 7.853 4.188 0 7.609-3.308 7.82-7.451h19.659c-.001.055-.008.109-.008.165 0 4.326 3.519 7.846 7.844 7.846s7.845-3.52 7.845-7.846-3.52-7.846-7.845-7.846c-3.199 0-5.952 1.928-7.171 4.681H50.299a7.804 7.804 0 0 0-1.848-2.947 7.787 7.787 0 0 0-5.541-2.298h-.002c-1.029 0-2.01.204-2.911.566l-1.45-4.933H85.22c.741 0 1.371-.541 1.482-1.273l7.867-51.433a1.499 1.499 0 0 0-.345-1.203zM78.222 80.207c2.671 0 4.845 2.174 4.845 4.846s-2.174 4.846-4.845 4.846-4.844-2.174-4.844-4.846 2.173-4.846 4.844-4.846zm-35.314-.564h.001c1.291 0 2.505.504 3.419 1.419a4.812 4.812 0 0 1 1.418 3.425c0 2.676-2.171 4.853-4.84 4.853a4.856 4.856 0 0 1-4.848-4.853 4.853 4.853 0 0 1 4.85-4.844zm41.023-10.367H37.664l-2.836-9.648a1.498 1.498 0 0 0-.152-.338L23.203 20.843h68.136l-7.408 48.433z"
+    />
+  </symbol>
+</svg> -->
+
+<!-- Старое -->
+<!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+  <symbol id="home">
+    <path
+      d="M92.345 44.125 50.53 8.39a1.5 1.5 0 0 0-1.959.008L7.646 44.005a1.5 1.5 0 1 0 1.969 2.263l8.818-7.672v47.872a1.5 1.5 0 0 0 1.5 1.5h58.605a1.5 1.5 0 0 0 1.5-1.5V37.554l10.357 8.851a1.498 1.498 0 1 0 1.95-2.28zM77.038 84.969H21.433V35.986L49.564 11.51l27.474 23.48v49.979z"
+    />
+    <path
+      d="M33.45 41.326v28.78a1.5 1.5 0 0 0 1.5 1.5h28.778a1.5 1.5 0 0 0 1.5-1.5v-28.78a1.5 1.5 0 0 0-1.5-1.5H34.95a1.5 1.5 0 0 0-1.5 1.5zm17.499 27.28V57.217h11.279v11.389H50.949zm11.28-14.389h-11.28V42.826h11.279v11.391zM36.45 42.826h11.499v12.335a1.489 1.489 0 0 0 0 1.112v12.332H36.45V42.826z"
+    />
+  </symbol>
+</svg> -->
