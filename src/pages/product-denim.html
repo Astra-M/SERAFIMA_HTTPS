@@ -2,44 +2,37 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <title>Кожаный браслет регализ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Браслет регализ с керамическими бусинами</title>
     <!-- Сначала шрифты, потом глобальные стили, потом кастомные стили -->
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
     <!-- Если стили свайпера идут после моих кастомных стилей, то исчезнет отступ между большой фото и иконками снизу. -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link
-      rel="stylesheet"
-      href="./index.css" />
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href=".../index.css" />
   </head>
 
   <body class="page">
     <div class="page__container">
       <header class="product-header">
-        <a
-          href="#"
-          class="product-header__logo-link">
+        <a href="#" class="product-header__logo-link">
           <img
-            src="./images/Serafima_logo.png"
+            src="../images/Serafima_logo.png"
             class="product-header__logo"
-            alt="лого Серафима студио" />
+            alt="лого Серафима студио"
+          />
         </a>
         <!-- viewBox="0 0 100 100" -->
         <nav class="product-header__nav">
@@ -52,42 +45,36 @@
               <a
                 href="./index.html"
                 class="product-header__nav-link"
-                target="_blank">
+                target="_blank"
+              >
                 <!-- Все классы для svg и viewBox прописываются внутри html при использовании use -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 40 40"
-                  class="product-header__nav-item_icon">
+                  class="product-header__nav-item_icon"
+                >
                   <!-- в доке и на форуме путь должен быть без слеша, и все работает, но я оставила обычный путь от корня -->
                   <use href="./svg/icons.svg#home"></use>
                 </svg>
               </a>
             </li>
             <li class="product-header__nav-item">
-              <a
-                href="#"
-                class="product-header__nav-link"
-                target="_blank"
+              <a href="#" class="product-header__nav-link" target="_blank"
                 >Обо мне</a
               >
             </li>
             <li class="product-header__nav-item">
-              <a
-                href="#"
-                class="product-header__nav-link"
-                target="_blank"
+              <a href="#" class="product-header__nav-link" target="_blank"
                 >В каталог</a
               >
             </li>
             <li class="product-header__nav-item product-header__nav-item_icon">
-              <a
-                href="#"
-                class="product-header__nav-link"
-                target="_blank">
+              <a href="#" class="product-header__nav-link" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 40 40"
-                  class="product-header__nav-item_icon">
+                  class="product-header__nav-item_icon"
+                >
                   <use href="./svg/icons.svg#cart"></use>
                 </svg>
               </a>
@@ -112,46 +99,25 @@
                     <source
                       media="(max-width: 320px)"
                       srcset="
-                        ./images/vesna/vesna1-s@1x.jpg 1x,
-                        ./images/vesna/vesna1-s@2x.jpg 2x
-                      " />
+                        ../images/denim/denim3-s@1x.jpg 1x,
+                        ../images/denim/denim3-s@2x.jpg 2x
+                      "
+                    />
                     <source
                       media="(max-width: 768px)"
                       srcset="
-                        ./images/vesna/vesna1-m@1x.jpg 1x,
-                        ./images/vesna/vesna1-m@2x.jpg 2x
-                      " />
-                    <img
-                      src="./images/vesna/vesna1-l@1x.jpg"
-                      srcset="
-                        ./images/vesna/vesna1-l@1x.jpg 1x,
-                        ./images/vesna/vesna1-l@2x.jpg 2x
+                        ../images/denim/denim3-m@1x.jpg 1x,
+                        ../images/denim/denim3-m@2x.jpg 2x
                       "
-                      class="swiper-image" />
-                  </picture>
-                </div>
-
-                <div class="swiper-slide">
-                  <picture>
-                    <source
-                      media="(max-width: 320px)"
-                      srcset="
-                        ./images/vesna/vesna3-s@1x.jpg 1x,
-                        ./images/vesna/vesna3-s@2x.jpg 2x
-                      " />
-                    <source
-                      media="(max-width: 768px)"
-                      srcset="
-                        ./images/vesna/vesna3-m@1x.jpg 1x,
-                        ./images/vesna/vesna3-m@2x.jpg 2x
-                      " />
+                    />
                     <img
-                      src="./images/vesna/vesna3-l@1x.jpg"
+                      src="../images/denim/denim3-l@1x.jpg"
                       srcset="
-                        ./images/vesna/vesna3-l@1x.jpg 1x,
-                        ./images/vesna/vesna3-l@2x.jpg 2x
+                        ../images/denim/denim3-l@1x.jpg 1x,
+                        ../images/denim/denim3-l@2x.jpg 2x
                       "
-                      class="swiper-image" />
+                      class="swiper-image"
+                    />
                   </picture>
                 </div>
                 <div class="swiper-slide">
@@ -159,22 +125,25 @@
                     <source
                       media="(max-width: 320px)"
                       srcset="
-                        ./images/vesna/vesna2-s@1x.jpg 1x,
-                        ./images/vesna/vesna2-s@2x.jpg 2x
-                      " />
+                        ../images/denim/denim4-s@1x.jpg 1x,
+                        ../images/denim/denim4-s@2x.jpg 2x
+                      "
+                    />
                     <source
                       media="(max-width: 768px)"
                       srcset="
-                        ./images/vesna/vesna2-m@1x.jpg 1x,
-                        ./images/vesna/vesna2-m@2x.jpg 2x
-                      " />
-                    <img
-                      src="./images/vesna/vesna2-l@1x.jpg"
-                      srcset="
-                        ./images/vesna/vesna2-l@1x.jpg 1x,
-                        ./images/vesna/vesna2-l@2x.jpg 2x
+                        ../images/denim/denim4-m@1x.jpg 1x,
+                        ../images/denim/denim4-m@2x.jpg 2x
                       "
-                      class="swiper-image" />
+                    />
+                    <img
+                      src="../images/denim/denim4-l@1x.jpg"
+                      srcset="
+                        ../images/denim/denim4-l@1x.jpg 1x,
+                        ../images/denim/denim4-l@2x.jpg 2x
+                      "
+                      class="swiper-image"
+                    />
                   </picture>
                 </div>
                 <div class="swiper-slide">
@@ -182,22 +151,51 @@
                     <source
                       media="(max-width: 320px)"
                       srcset="
-                        ./images/vesna/vesna4-s@1x.jpg 1x,
-                        ./images/vesna/vesna4-s@2x.jpg 2x
-                      " />
+                        ../images/denim/denim1-s@1x.jpg 1x,
+                        ../images/denim/denim1-s@2x.jpg 2x
+                      "
+                    />
                     <source
                       media="(max-width: 768px)"
                       srcset="
-                        ./images/vesna/vesna4-m@1x.jpg 1x,
-                        ./images/vesna/vesna4-m@2x.jpg 2x
-                      " />
-                    <img
-                      src="./images/vesna/vesna4-l@1x.jpg"
-                      srcset="
-                        ./images/vesna/vesna4-l@1x.jpg 1x,
-                        ./images/vesna/vesna4-l@2x.jpg 2x
+                        ../images/denim/denim1-m@1x.jpg 1x,
+                        ../images/denim/denim1-m@2x.jpg 2x
                       "
-                      class="swiper-image" />
+                    />
+                    <img
+                      src="../images/denim/denim1-l@1x.jpg"
+                      srcset="
+                        ../images/denim/denim1-l@1x.jpg 1x,
+                        ../images/denim/denim1-l@2x.jpg 2x
+                      "
+                      class="swiper-image"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ../images/denim/denim2-s@1x.jpg 1x,
+                        ../images/denim/denim2-s@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ../images/denim/denim2-m@1x.jpg 1x,
+                        ../images/denim/denim2-m@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="../images/denim/denim2-l@1x.jpg"
+                      srcset="
+                        ../images/denim/denim2-l@1x.jpg 1x,
+                        ../images/denim/denim2-l@2x.jpg 2x
+                      "
+                      class="swiper-image"
+                    />
                   </picture>
                 </div>
               </div>
@@ -209,9 +207,7 @@
               <div class="swiper-button-next"></div>
             </div>
             <!--Слайдер с иконками  -->
-            <div
-              thumbsSlider=""
-              class="swiper mySwiper">
+            <div thumbsSlider="" class="swiper mySwiper">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -220,21 +216,24 @@
                     <source
                       media="(max-width: 320px)"
                       srcset="
-                        ./images/vesna/vesna1-s@1x.jpg 1x,
-                        ./images/vesna/vesna1-s@2x.jpg 2x
-                      " />
+                        ../images/denim/denim3-s@1x.jpg 1x,
+                        ../images/denim/denim3-s@2x.jpg 2x
+                      "
+                    />
                     <source
                       media="(max-width: 768px)"
                       srcset="
-                        ./images/vesna/vesna1-m@1x.jpg 1x,
-                        ./images/vesna/vesna1-m@2x.jpg 2x
-                      " />
+                        ../images/denim/denim3-m@1x.jpg 1x,
+                        ../images/denim/denim3-m@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/vesna/vesna1-l@1x.jpg"
+                      src="../images/denim/denim3-l@1x.jpg"
                       srcset="
-                        ./images/vesna/vesna1-l@1x.jpg 1x,
-                        ./images/vesna/vesna1-l@2x.jpg 2x
-                      " />
+                        ../images/denim/denim3-l@1x.jpg 1x,
+                        ../images/denim/denim3-l@2x.jpg 2x
+                      "
+                    />
                   </picture>
                 </div>
                 <div class="swiper-slide">
@@ -242,21 +241,24 @@
                     <source
                       media="(max-width: 320px)"
                       srcset="
-                        ./images/vesna/vesna3-s@1x.jpg 1x,
-                        ./images/vesna/vesna3-s@2x.jpg 2x
-                      " />
+                        ../images/denim/denim4-s@1x.jpg 1x,
+                        ../images/denim/denim4-s@2x.jpg 2x
+                      "
+                    />
                     <source
                       media="(max-width: 768px)"
                       srcset="
-                        ./images/vesna/vesna3-m@1x.jpg 1x,
-                        ./images/vesna/vesna3-m@2x.jpg 2x
-                      " />
+                        ../images/denim/denim4-m@1x.jpg 1x,
+                        ../images/denim/denim4-m@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/vesna/vesna3-l@1x.jpg"
+                      src="../images/denim/denim4-l@1x.jpg"
                       srcset="
-                        ./images/vesna/vesna3-l@1x.jpg 1x,
-                        ./images/vesna/vesna3-l@2x.jpg 2x
-                      " />
+                        ../images/denim/denim4-l@1x.jpg 1x,
+                        ../images/denim/denim4-l@2x.jpg 2x
+                      "
+                    />
                   </picture>
                 </div>
                 <div class="swiper-slide">
@@ -264,21 +266,24 @@
                     <source
                       media="(max-width: 320px)"
                       srcset="
-                        ./images/vesna/vesna2-s@1x.jpg 1x,
-                        ./images/vesna/vesna2-s@2x.jpg 2x
-                      " />
+                        ../images/denim/denim1-s@1x.jpg 1x,
+                        ../images/denim/denim1-s@2x.jpg 2x
+                      "
+                    />
                     <source
                       media="(max-width: 768px)"
                       srcset="
-                        ./images/vesna/vesna2-m@1x.jpg 1x,
-                        ./images/vesna/vesna2-m@2x.jpg 2x
-                      " />
+                        ../images/denim/denim1-m@1x.jpg 1x,
+                        ../images/denim/denim1-m@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/vesna/vesna2-l@1x.jpg"
+                      src="../images/denim/denim1-l@1x.jpg"
                       srcset="
-                        ./images/vesna/vesna2-l@1x.jpg 1x,
-                        ./images/vesna/vesna2-l@2x.jpg 2x
-                      " />
+                        ../images/denim/denim1-l@1x.jpg 1x,
+                        ../images/denim/denim1-l@2x.jpg 2x
+                      "
+                    />
                   </picture>
                 </div>
                 <div class="swiper-slide">
@@ -286,21 +291,24 @@
                     <source
                       media="(max-width: 320px)"
                       srcset="
-                        ./images/vesna/vesna4-s@1x.jpg 1x,
-                        ./images/vesna/vesna4-s@2x.jpg 2x
-                      " />
+                        ../images/denim/denim2-s@1x.jpg 1x,
+                        ../images/denim/denim2-s@2x.jpg 2x
+                      "
+                    />
                     <source
                       media="(max-width: 768px)"
                       srcset="
-                        ./images/vesna/vesna4-m@1x.jpg 1x,
-                        ./images/vesna/vesna4-m@2x.jpg 2x
-                      " />
+                        ../images/denim/denim2-m@1x.jpg 1x,
+                        ../images/denim/denim2-m@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/vesna/vesna4-l@1x.jpg"
+                      src="../images/denim/denim2-l@1x.jpg"
                       srcset="
-                        ./images/vesna/vesna4-l@1x.jpg 1x,
-                        ./images/vesna/vesna4-l@2x.jpg 2x
-                      " />
+                        ../images/denim/denim2-l@1x.jpg 1x,
+                        ../images/denim/denim2-l@2x.jpg 2x
+                      "
+                    />
                   </picture>
                 </div>
               </div>
@@ -309,14 +317,16 @@
 
           <div class="single-product__info">
             <h1 class="single-product__title">
-              Браслет регализ &laquo;Предчувствие весны&raquo;
+              Браслет регализ &laquo;Кристальный деним&raquo;
             </h1>
 
             <span class="single-product__price"> 3 500 руб.</span>
             <p class="single-product__intro">
-              Нежный браслет регализ в зеленых тонах пробуждающейся природы.
-              <br />Словно ростки молодой, еще неокрепшей, травы. Словно клейкие
-              тополиные листочки, остро пахнущие солнцем и теплом.
+              <br />
+              Редкие керамические бусины цвета взметнувшейся морской волны и
+              нагретого солнцем песчаного пляжа. А по центру — кристальные искры
+              Swarovski.<br />
+              Идеальный вариант для поклонников стиля «джинс»!
             </p>
             <div class="single-product__labels">
               <span
@@ -328,13 +338,11 @@
               >
             </div>
             <p class="single-product__description">
-              Натуральная кожа пр-ва Испания.
+              Натуральная кожа пр-ва Испания. На оборотной стороне браслета Вы
+              можете увидеть клеймо-маркировку — «Made in EU».
             </p>
             <p class="single-product__description">
-              Керамические бусины из Греции ручного производства, благородного
-              зеленого цвета с радужным переливом. <br />
-              А также металлические бусины с редким изящным узором в виде первых
-              весенних птичек!
+              Керамические бусины из Греции, ручного производства.
             </p>
             <p class="single-product__description">Замок магнитный.</p>
             <p class="single-product__description">
@@ -354,7 +362,7 @@
               <tr>
                 <td class="single-product__details-cell">Материал</td>
                 <td class="single-product__details-cell">
-                  кожа натуральная, керамика
+                  кожа натуральная, керамика, кристаллы Swarovski
                 </td>
               </tr>
               <tr>
@@ -367,13 +375,11 @@
               </tr>
               <tr>
                 <td class="single-product__details-cell">Стиль</td>
-                <td class="single-product__details-cell">романтика</td>
+                <td class="single-product__details-cell">джинс</td>
               </tr>
             </table>
 
-            <button
-              type="submit"
-              class="shop-button shop-button_size_small">
+            <button type="submit" class="shop-button shop-button_size_small">
               в корзину
             </button>
           </div>

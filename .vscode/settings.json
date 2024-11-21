@@ -2,5 +2,7 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode",
 
   "editor.guides.bracketPairs": false,
-  "editor.formatOnSave": true
+  "editor.formatOnSave": true,
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always"
 }

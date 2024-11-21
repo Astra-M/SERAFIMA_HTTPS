@@ -2,44 +2,37 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <title>Браслет регализ ручной работы красный</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Кожаный браслет регализ</title>
     <!-- Сначала шрифты, потом глобальные стили, потом кастомные стили -->
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com" />
-    <link
-      rel="preconnect"
-      href="https://fonts.gstatic.com"
-      crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap"
-      rel="stylesheet" />
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       type="text/css"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
+    />
     <!-- Если стили свайпера идут после моих кастомных стилей, то исчезнет отступ между большой фото и иконками снизу. -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
-    <link
-      rel="stylesheet"
-      href="./index.css" />
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="../index.css" />
   </head>
 
   <body class="page">
     <div class="page__container">
       <header class="product-header">
-        <a
-          href="#"
-          class="product-header__logo-link">
+        <a href="#" class="product-header__logo-link">
           <img
-            src="./images/Serafima_logo.png"
+            src="../images/Serafima_logo.png"
             class="product-header__logo"
-            alt="лого Серафима студио" />
+            alt="лого Серафима студио"
+          />
         </a>
         <!-- viewBox="0 0 100 100" -->
         <nav class="product-header__nav">
@@ -52,42 +45,36 @@
               <a
                 href="./index.html"
                 class="product-header__nav-link"
-                target="_blank">
+                target="_blank"
+              >
                 <!-- Все классы для svg и viewBox прописываются внутри html при использовании use -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 40 40"
-                  class="product-header__nav-item_icon">
+                  class="product-header__nav-item_icon"
+                >
                   <!-- в доке и на форуме путь должен быть без слеша, и все работает, но я оставила обычный путь от корня -->
                   <use href="./svg/icons.svg#home"></use>
                 </svg>
               </a>
             </li>
             <li class="product-header__nav-item">
-              <a
-                href="#"
-                class="product-header__nav-link"
-                target="_blank"
+              <a href="#" class="product-header__nav-link" target="_blank"
                 >Обо мне</a
               >
             </li>
             <li class="product-header__nav-item">
-              <a
-                href="#"
-                class="product-header__nav-link"
-                target="_blank"
+              <a href="#" class="product-header__nav-link" target="_blank"
                 >В каталог</a
               >
             </li>
             <li class="product-header__nav-item product-header__nav-item_icon">
-              <a
-                href="#"
-                class="product-header__nav-link"
-                target="_blank">
+              <a href="#" class="product-header__nav-link" target="_blank">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 40 40"
-                  class="product-header__nav-item_icon">
+                  class="product-header__nav-item_icon"
+                >
                   <use href="./svg/icons.svg#cart"></use>
                 </svg>
               </a>
@@ -112,22 +99,79 @@
                     <source
                       media="(max-width: 320px)"
                       srcset="
-                        ./images/obereg/obereg1-s@1x.jpg 1x,
-                        ./images/obereg/obereg1-s@2x.jpg 2x
-                      " />
+                        ../images/black/black1-s@1x.jpg 1x,
+                        ../images/black/black1-s@2x.jpg 2x
+                      "
+                    />
                     <source
                       media="(max-width: 768px)"
                       srcset="
-                        ./images/obereg/obereg1-m@1x.jpg 1x,
-                        ./images/obereg/obereg1-m@2x.jpg 2x
-                      " />
-                    <img
-                      src="./images/obereg/obereg1-l@1x.jpg"
-                      srcset="
-                        ./images/obereg/obereg1-l@1x.jpg 1x,
-                        ./images/obereg/obereg1-l@2x.jpg 2x
+                        ../images/black/black1-m@1x.jpg 1x,
+                        ../images/black/black1-m@2x.jpg 2x
                       "
-                      class="swiper-image" />
+                    />
+                    <img
+                      src="../images/black/black1-l@1x.jpg"
+                      srcset="
+                        ../images/black/black1-l@1x.jpg 1x,
+                        ../images/black/black1-l@2x.jpg 2x
+                      "
+                      class="swiper-image"
+                    />
+                  </picture>
+                </div>
+                <!-- фото 5 -->
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ../images/black/black2-s@1x.jpg 1x,
+                        ../images/black/black2-s@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ../images/black/black2-m@1x.jpg 1x,
+                        ../images/black/black2-m@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="../images/black/black2-l@1x.jpg"
+                      srcset="
+                        ../images/black/black2-l@1x.jpg 1x,
+                        ../images/black/black2-l@2x.jpg 2x
+                      "
+                      class="swiper-image"
+                    />
+                  </picture>
+                </div>
+                <!-- фото 1 -->
+                <div class="swiper-slide">
+                  <picture>
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ../images/black/black3-s@1x.jpg 1x,
+                        ../images/black/black3-s@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ../images/black/black3-m@1x.jpg 1x,
+                        ../images/black/black3-m@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="../images/black/black3-l@1x.jpg"
+                      srcset="
+                        ../images/black/black3-l@1x.jpg 1x,
+                        ../images/black/black3-l@2x.jpg 2x
+                      "
+                      class="swiper-image"
+                    />
                   </picture>
                 </div>
 
@@ -136,91 +180,25 @@
                     <source
                       media="(max-width: 320px)"
                       srcset="
-                        ./images/obereg/obereg3-s@1x.jpg 1x,
-                        ./images/obereg/obereg3-s@2x.jpg 2x
-                      " />
+                        ../images/black/black4-s@1x.jpg 1x,
+                        ../images/black/black4-s@2x.jpg 2x
+                      "
+                    />
                     <source
                       media="(max-width: 768px)"
                       srcset="
-                        ./images/obereg/obereg3-m@1x.jpg 1x,
-                        ./images/obereg/obereg3-m@2x.jpg 2x
-                      " />
-                    <img
-                      src="./images/obereg/obereg3-l@1x.jpg"
-                      srcset="
-                        ./images/obereg/obereg3-l@1x.jpg 1x,
-                        ./images/obereg/obereg3-l@2x.jpg 2x
+                        ../images/black/black4-m@1x.jpg 1x,
+                        ../images/black/black4-m@2x.jpg 2x
                       "
-                      class="swiper-image" />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source
-                      media="(max-width: 320px)"
-                      srcset="
-                        ./images/obereg/obereg4-s@1x.jpg 1x,
-                        ./images/obereg/obereg4-s@2x.jpg 2x
-                      " />
-                    <source
-                      media="(max-width: 768px)"
-                      srcset="
-                        ./images/obereg/obereg4-m@1x.jpg 1x,
-                        ./images/obereg/obereg4-m@2x.jpg 2x
-                      " />
+                    />
                     <img
-                      src="./images/obereg/obereg4-l@1x.jpg"
+                      src="../images/black/black4-l@1x.jpg"
                       srcset="
-                        ./images/obereg/obereg4-l@1x.jpg 1x,
-                        ./images/obereg/obereg4-l@2x.jpg 2x
+                        ../images/black/black4-l@1x.jpg 1x,
+                        ../images/black/black4-l@2x.jpg 2x
                       "
-                      class="swiper-image" />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source
-                      media="(max-width: 320px)"
-                      srcset="
-                        ./images/obereg/obereg5-s@1x.jpg 1x,
-                        ./images/obereg/obereg5-s@2x.jpg 2x
-                      " />
-                    <source
-                      media="(max-width: 768px)"
-                      srcset="
-                        ./images/obereg/obereg5-m@1x.jpg 1x,
-                        ./images/obereg/obereg5-m@2x.jpg 2x
-                      " />
-                    <img
-                      src="./images/obereg/obereg5-l@1x.jpg"
-                      srcset="
-                        ./images/obereg/obereg5-l@1x.jpg 1x,
-                        ./images/obereg/obereg5-l@2x.jpg 2x
-                      "
-                      class="swiper-image" />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture>
-                    <source
-                      media="(max-width: 320px)"
-                      srcset="
-                        ./images/obereg/obereg2-s@1x.jpg 1x,
-                        ./images/obereg/obereg2-s@2x.jpg 2x
-                      " />
-                    <source
-                      media="(max-width: 768px)"
-                      srcset="
-                        ./images/obereg/obereg2-m@1x.jpg 1x,
-                        ./images/obereg/obereg2-m@2x.jpg 2x
-                      " />
-                    <img
-                      src="./images/obereg/obereg2-l@1x.jpg"
-                      srcset="
-                        ./images/obereg/obereg2-l@1x.jpg 1x,
-                        ./images/obereg/obereg2-l@2x.jpg 2x
-                      "
-                      class="swiper-image" />
+                      class="swiper-image"
+                    />
                   </picture>
                 </div>
               </div>
@@ -232,9 +210,7 @@
               <div class="swiper-button-next"></div>
             </div>
             <!--Слайдер с иконками  -->
-            <div
-              thumbsSlider=""
-              class="swiper mySwiper">
+            <div thumbsSlider="" class="swiper mySwiper">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
                 <!-- Slides -->
@@ -243,47 +219,25 @@
                     <source
                       media="(max-width: 320px)"
                       srcset="
-                        ./images/obereg/obereg1-s@1x.jpg 1x,
-                        ./images/obereg/obereg1-s@2x.jpg 2x
-                      " />
+                        ../images/black/black1-s@1x.jpg 1x,
+                        ../images/black/black1-s@2x.jpg 2x
+                      "
+                    />
                     <source
                       media="(max-width: 768px)"
                       srcset="
-                        ./images/obereg/obereg1-m@1x.jpg 1x,
-                        ./images/obereg/obereg1-m@2x.jpg 2x
-                      " />
+                        ../images/black/black1-m@1x.jpg 1x,
+                        ../images/black/black1-m@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/obereg/obereg1-l@1x.jpg"
+                      src="../images/black/black1-l@1x.jpg"
                       srcset="
-                        ./images/obereg/obereg1-l@1x.jpg 1x,
-                        ./images/obereg/obereg1-l@2x.jpg 2x
-                      " />
-                  </picture>
-                  <!-- <img
-                    src="./images/regalis-denim.jpg"
-                    class="thumbs-swiper-image"
-                    alt="" /> -->
-                </div>
-                <div class="swiper-slide">
-                  <picture class="thumbs-swiper-image">
-                    <source
-                      media="(max-width: 320px)"
-                      srcset="
-                        ./images/obereg/obereg3-s@1x.jpg 1x,
-                        ./images/obereg/obereg3-s@2x.jpg 2x
-                      " />
-                    <source
-                      media="(max-width: 768px)"
-                      srcset="
-                        ./images/obereg/obereg3-m@1x.jpg 1x,
-                        ./images/obereg/obereg3-m@2x.jpg 2x
-                      " />
-                    <img
-                      src="./images/obereg/obereg3-l@1x.jpg"
-                      srcset="
-                        ./images/obereg/obereg3-l@1x.jpg 1x,
-                        ./images/obereg/obereg3-l@2x.jpg 2x
-                      " />
+                        ../images/black/black1-l@1x.jpg 1x,
+                        ../images/black/black1-l@2x.jpg 2x
+                      "
+                      class="swiper-image"
+                    />
                   </picture>
                 </div>
                 <div class="swiper-slide">
@@ -291,21 +245,51 @@
                     <source
                       media="(max-width: 320px)"
                       srcset="
-                        ./images/obereg/obereg4-s@1x.jpg 1x,
-                        ./images/obereg/obereg4-s@2x.jpg 2x
-                      " />
+                        ../images/black/black2-s@1x.jpg 1x,
+                        ../images/black/zolot2-s@2x.jpg 2x
+                      "
+                    />
                     <source
                       media="(max-width: 768px)"
                       srcset="
-                        ./images/obereg/obereg4-m@1x.jpg 1x,
-                        ./images/obereg/obereg4-m@2x.jpg 2x
-                      " />
+                        ../images/black/black2-m@1x.jpg 1x,
+                        ../images/black/black2-m@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/obereg/obereg4-l@1x.jpg"
+                      src="../images/black/black2-l@1x.jpg"
                       srcset="
-                        ./images/obereg/obereg4-l@1x.jpg 1x,
-                        ./images/obereg/obereg4-l@2x.jpg 2x
-                      " />
+                        ../images/black/black2-l@1x.jpg 1x,
+                        ../images/black/black2-l@2x.jpg 2x
+                      "
+                      class="swiper-image"
+                    />
+                  </picture>
+                </div>
+                <div class="swiper-slide">
+                  <picture class="thumbs-swiper-image">
+                    <source
+                      media="(max-width: 320px)"
+                      srcset="
+                        ../images/black/black3-s@1x.jpg 1x,
+                        ../images/black/black3-s@2x.jpg 2x
+                      "
+                    />
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="
+                        ../images/black/black3-m@1x.jpg 1x,
+                        ../images/black/black3-m@2x.jpg 2x
+                      "
+                    />
+                    <img
+                      src="../images/black/black3-l@1x.jpg"
+                      srcset="
+                        ../images/black/black3-l@1x.jpg 1x,
+                        ../images/black/black3-l@2x.jpg 2x
+                      "
+                      class="swiper-image"
+                    />
                   </picture>
                 </div>
 
@@ -314,43 +298,25 @@
                     <source
                       media="(max-width: 320px)"
                       srcset="
-                        ./images/obereg/obereg5-s@1x.jpg 1x,
-                        ./images/obereg/obereg5-s@2x.jpg 2x
-                      " />
+                        ../images/black/black4-s@1x.jpg 1x,
+                        ../images/black/black4-s@2x.jpg 2x
+                      "
+                    />
                     <source
                       media="(max-width: 768px)"
                       srcset="
-                        ./images/obereg/obereg5-m@1x.jpg 1x,
-                        ./images/obereg/obereg5-m@2x.jpg 2x
-                      " />
+                        ../images/black/black4-m@1x.jpg 1x,
+                        ../images/black/black4-m@2x.jpg 2x
+                      "
+                    />
                     <img
-                      src="./images/obereg/obereg5-l@1x.jpg"
+                      src="../images/black/black4-l@1x.jpg"
                       srcset="
-                        ./images/obereg/obereg5-l@1x.jpg 1x,
-                        ./images/obereg/obereg5-l@2x.jpg 2x
-                      " />
-                  </picture>
-                </div>
-                <div class="swiper-slide">
-                  <picture class="thumbs-swiper-image">
-                    <source
-                      media="(max-width: 320px)"
-                      srcset="
-                        ./images/obereg/obereg2-s@1x.jpg 1x,
-                        ./images/obereg/obereg2-s@2x.jpg 2x
-                      " />
-                    <source
-                      media="(max-width: 768px)"
-                      srcset="
-                        ./images/obereg/obereg2-m@1x.jpg 1x,
-                        ./images/obereg/obereg2-m@2x.jpg 2x
-                      " />
-                    <img
-                      src="./images/obereg/obereg2-l@1x.jpg"
-                      srcset="
-                        ./images/obereg/obereg2-l@1x.jpg 1x,
-                        ./images/obereg/obereg2-l@2x.jpg 2x
-                      " />
+                        ../images/black/black4-l@1x.jpg 1x,
+                        ../images/black/black4-l@2x.jpg 2x
+                      "
+                      class="swiper-image"
+                    />
                   </picture>
                 </div>
               </div>
@@ -359,14 +325,14 @@
 
           <div class="single-product__info">
             <h1 class="single-product__title">
-              Браслет регализ &laquo;Алый оберег&raquo;
+              Браслет регализ &laquo;Black & White&raquo;
             </h1>
 
-            <span class="single-product__price"> 3 500 руб.</span>
+            <span class="single-product__price"> 3 800 руб.</span>
             <p class="single-product__intro">
-              Дерзкий. Броский. Вызывающий. Для тех, кто любит впечатлять и быть
-              примером для подражания. Для ярких личностей, которые не боятся
-              сильных эффектов!
+              Элегантная черно-белая классика. Графичный и нейтральный
+              одновременно. Как маленькое черное платье, такой браслет нужен
+              каждой!
             </p>
             <div class="single-product__labels">
               <span
@@ -378,24 +344,28 @@
               >
             </div>
             <p class="single-product__description">
-              Браслет выполнен из натуральной кожи производства Испания, с
-              выделкой под кожу питона.
+              Кожаный шнур от испанского производителя, с интересной фактурой
+              под рептилию и деликатным глянцевым блеском.
             </p>
             <p class="single-product__description">
-              Бусины греческого производства, каждая сделана вручную. <br />
-              В центре – бусина черного цвета, с легким бензиновым отливом,
-              очень красивая!<br />
-              По бокам – пятнистые бусины с разным рисунком с разных сторон, за
-              счет чего браслет можно носить как двусторонний.
+              Бусины керамические, из Греции. Каждая сделана вручную. В центре –
+              большая бусина черного цвета с легким бензиновым переливом. Очень
+              красивая!
+            </p>
+
+            <p class="single-product__description">
+              Удобный магнитный замок, легко открывать-закрывать самостоятельно,
+              и при этом он крепко фиксирует браслет на руке.
             </p>
             <p class="single-product__description">
-              Фурнитура выполнена из сплава ZAMAK. <br />
-              Это сплав премиум-класса из 4-х металлов (цинка, алюминия, магния
-              и меди), более прочный и безопасный, чем дешевые традиционные
-              никельсодержащие сплавы.
+              Фурнитура выполнена из сплава ZAMAK. Это сплав премиум-класса из
+              4-х металлов (цинка, алюминия, магния и меди), более прочный и
+              безопасный, чем дешевые традиционные никельсодержащие сплавы.
             </p>
+            <p class="single-product__description">Цвет фурнитуры – золото.</p>
             <p class="single-product__description">
-              Цвет фурнитуры – под золото.
+              Отличный вариант для тех, кто любит бижутерию в сдержанном стиле.
+              Лучший выбор для офисного дресс-кода.
             </p>
 
             <table class="single-product__details">
@@ -419,13 +389,11 @@
               </tr>
               <tr>
                 <td class="single-product__details-cell">Стиль</td>
-                <td class="single-product__details-cell">экспрессия</td>
+                <td class="single-product__details-cell">нейтральный</td>
               </tr>
             </table>
 
-            <button
-              type="submit"
-              class="shop-button shop-button_size_small">
+            <button type="submit" class="shop-button shop-button_size_small">
               в корзину
             </button>
           </div>
