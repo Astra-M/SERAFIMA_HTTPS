@@ -3,6 +3,42 @@
     "swiper": "^10.3.1"
   },
   "devDependencies": {
-    "gulp": "^5.0.0"
-  }
+    "browser-sync": "^3.0.3",
+    "del": "^6.0.0",
+    "gulp": "^5.0.0",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-html-replace": "^1.6.2",
+    "gulp-plumber": "^1.2.1",
+    "gulp-replace": "^1.1.4",
+    "i": "^0.3.7",
+    "npm": "^10.9.1",
+    "prettier": "^3.3.3",
+    "stylelint": "^16.10.0"
+  },
+  "name": "serafima_https",
+  "description": "internet shop",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo 'Привет!'",
+    "check": "prettier --check './src/**/*.{html,css,js}'",
+    "format": "prettier --write './src/**/*.{html,css,js}'",
+    "lint": "stylelint './src/**/*.css'",
+    "lintfix": "stylelint './src/**/*.css' --fix",
+    "checkAll": "npm run check && npm run lint",
+    "fixAll": "npm run format || true && npm run lintfix || true",
+    "build": "gulp build",
+    "dev": "gulp",
+    "fixAndBuild": "npm run fixAll && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Astra-M/SERAFIMA_HTTPS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Astra-M/SERAFIMA_HTTPS/issues"
+  },
+  "homepage": "https://github.com/Astra-M/SERAFIMA_HTTPS#readme"
 }

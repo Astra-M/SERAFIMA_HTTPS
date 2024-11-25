@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -54,7 +54,7 @@
                   class="product-header__nav-item_icon"
                 >
                   <!-- в доке и на форуме путь должен быть без слеша, и все работает, но я оставила обычный путь от корня -->
-                  <use href="./svg/icons.svg#home"></use>
+                  <use href="../images/svg/icons.svg#home"></use>
                 </svg>
               </a>
             </li>
@@ -75,7 +75,7 @@
                   viewBox="0 0 40 40"
                   class="product-header__nav-item_icon"
                 >
-                  <use href="./svg/icons.svg#cart"></use>
+                  <use href="../images/svg/icons.svg#cart"></use>
                 </svg>
               </a>
             </li>
@@ -446,19 +446,19 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 
     <script>
-      const swiper = new Swiper(".mySwiper", {
+      const swiper = new Swiper('.mySwiper', {
         loop: true,
         spaceBetween: 10,
         slidesPerView: 4,
         freeMode: true,
         watchSlidesProgress: true,
       });
-      const swiper2 = new Swiper(".mySwiper2", {
+      const swiper2 = new Swiper('.mySwiper2', {
         loop: true,
         spaceBetween: 10,
         navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
         },
         thumbs: {
           swiper: swiper,

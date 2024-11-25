@@ -4,7 +4,7 @@
   padding: 0;
   box-sizing: border-box;
   color: #000;
-  font-family: "Open Sans", "Arial", "Helvetica", sans-serif;
+  font-family: 'Open Sans', 'Arial', 'Helvetica', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -151,7 +151,7 @@
   justify-content: center;
   flex-direction: row;
   overflow: hidden;
-  background-image: url("./images/cover-banner.jpg");
+  background-image: url('./images/cover-banner.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -611,9 +611,9 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-template-areas:
-    "image1 image1 image2"
-    "image1 image1 image2"
-    "image1 image1 image2";
+    'image1 image1 image2'
+    'image1 image1 image2'
+    'image1 image1 image2';
   row-gap: 10px;
   column-gap: 10px;
   list-style-type: none;
