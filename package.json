@@ -8,9 +8,12 @@
     "gulp": "^5.0.0",
     "gulp-concat-css": "^3.1.0",
     "gulp-html-replace": "^1.6.2",
+    "gulp-newer": "^1.4.0",
     "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^5.0.0",
     "gulp-replace": "^1.1.4",
     "i": "^0.3.7",
+    "merge-stream": "^2.0.0",
     "npm": "^10.9.1",
     "prettier": "^3.3.3",
     "stylelint": "^16.10.0"
